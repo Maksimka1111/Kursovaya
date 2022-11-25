@@ -1,0 +1,1327 @@
+.form_body {
+  display: flex;
+  flex-flow: column wrap;
+  background: linear-gradient(90deg, black, aliceblue);
+}
+.reg {
+  display: flex;
+  flex-flow: column wrap;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  margin-left: 40%;
+  margin-top: 10%;
+  background: linear-gradient(180deg, gray, aliceblue);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.reg h2 {
+  color: white;
+  text-decoration: underline;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.reg p {
+  font-size: small;
+  color: black;
+  margin-left: 50px;
+}
+.reg-button2 {
+  border-radius: 100px;
+  border: none;
+  width: 70px;
+  height: 30px;
+  margin-left: 50px;
+  background-color: white;
+}
+.reg-button {
+  border-radius: 100px;
+  border: none;
+  width: 200px;
+  height: 30px;
+  margin-left: 50px;
+  background-color: white;
+}
+.reg input {
+  border-radius: 100px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 30px;
+}
+.reg::before {
+  content: "";
+  position: absolute;
+  margin-bottom: 100px;
+  top: calc(-110px + 30px);
+  animation-name: kub1;
+  animation-duration: 20s;
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+  opacity: 0.2;
+  animation-iteration-count: infinite;
+}
+.reg::after {
+  content: "";
+  position: absolute;
+  margin-bottom: 100px;
+  bottom: calc(-200px + 30px);
+  left: calc(100% / 2);
+  animation-name: kub2;
+  animation-duration: 20s;
+  animation-delay: 7s;
+  animation-fill-mode: backwards;
+  opacity: 0.2;
+  animation-iteration-count: infinite;
+}
+.anims::before {
+  content: "";
+  position: absolute;
+  margin-bottom: 100px;
+  left: calc(-110px + 30px);
+  animation-name: kub3;
+  animation-duration: 20s;
+  animation-fill-mode: backwards;
+  animation-delay: 0s;
+  opacity: 0.2;
+  animation-iteration-count: infinite;
+}
+.anims::after {
+  content: "";
+  position: absolute;
+  margin-bottom: 100px;
+  left: calc(100% * 1.5);
+  animation-name: kub4;
+  animation-duration: 20s;
+  animation-delay: 10s;
+  animation-fill-mode: backwards;
+  opacity: 0.2;
+  animation-iteration-count: infinite;
+}
+input::placeholder {
+  color: lightslategray;
+  font-style: italic;
+}
+@keyframes kub1 {
+  from {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+  30% {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateY(-50px);
+  }
+  50% {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(200px);
+  }
+  70% {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateY(120px);
+  }
+  to {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+}
+@keyframes kub2 {
+  from {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+  30% {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateY(50px);
+    transition: all 10s;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(-150px);
+    transition: all 10s;
+  }
+  70% {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateY(-20px);
+    transition: all 10s;
+  }
+  to {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+}
+@keyframes kub3 {
+  from {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+  30% {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(-50px);
+    transition: all 10s;
+  }
+  50% {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateY(250px);
+    transition-timing-function: linear;
+  }
+  70% {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translate(-100px, -50px);
+    transition: all 10s;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+}
+@keyframes kub4 {
+  from {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+  30% {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(-200px);
+    transition: all 10s;
+  }
+  50% {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateY(250px);
+    transition-timing-function: linear;
+  }
+  to {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 700px) {
+  .form_body {
+    overflow: hidden;
+  }
+  .reg {
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    width: 290px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-top: 10%;
+    background: linear-gradient(180deg, gray, aliceblue);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  .reg h2 {
+    color: white;
+    text-decoration: underline;
+  }
+  .reg p {
+    font-size: small;
+    color: black;
+  }
+  .reg-button2 {
+    border-radius: 100px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    background-color: white;
+  }
+  .reg-button {
+    border-radius: 100px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    background-color: white;
+  }
+  .reg input {
+    border-radius: 100px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+  }
+}
+.soc {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+}
+.card_main1 {
+  margin-top: 5%;
+  margin-left: 45%;
+}
+.card_main2 {
+  margin-left: 35%;
+  margin-top: 5%;
+}
+.card_main3 {
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.card4 {
+  width: 130px;
+  height: 450px;
+  background: linear-gradient(red, orange);
+  transform: skewX(10deg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.card4:hover {
+  transform: skewX(0deg);
+  transition: all 3s;
+}
+.card_text4::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  width: 220px;
+  height: 150px;
+  top: 38%;
+  right: 71%;
+  background: linear-gradient(180deg, gray, aliceblue);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+}
+.card_text4 h2 {
+  color: white;
+  position: absolute;
+  top: 38%;
+  right: 76%;
+  z-index: 100;
+}
+.card_text4 p {
+  color: white;
+  position: absolute;
+  font-size: small;
+  top: 45%;
+  right: 74%;
+  z-index: 100;
+}
+.card_text4 button {
+  color: black;
+  background-color: white;
+  border: none;
+  position: absolute;
+  top: 57%;
+  right: 81%;
+  z-index: 100;
+}
+.card5 {
+  width: 130px;
+  height: 450px;
+  background: linear-gradient(purple, blue);
+  transform: skewX(10deg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.card5:hover {
+  transform: skewX(0deg);
+  transition: all 3s;
+}
+.card_text5::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  width: 220px;
+  height: 150px;
+  top: 38%;
+  right: 42%;
+  background: linear-gradient(180deg, gray, aliceblue);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+}
+.card_text5 h2 {
+  color: white;
+  position: absolute;
+  right: 46%;
+  top: 38%;
+  z-index: 100;
+}
+.card_text5 p {
+  color: white;
+  position: absolute;
+  right: 45%;
+  top: 46%;
+  font-size: small;
+  z-index: 100;
+}
+.card_text5 button {
+  color: black;
+  background-color: white;
+  border: none;
+  position: absolute;
+  right: 52%;
+  top: 57%;
+  z-index: 100;
+}
+.card6 {
+  width: 130px;
+  height: 450px;
+  left: 70%;
+  top: 20%;
+  background: linear-gradient(blue, green);
+  transform: skewX(10deg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.card6:hover {
+  transform: skewX(0deg);
+  transition: all 3s;
+}
+.card_text6::before {
+  content: "";
+  position: absolute;
+  left: 70%;
+  top: 38%;
+  opacity: 0.3;
+  width: 220px;
+  height: 150px;
+  background: linear-gradient(180deg, gray, aliceblue);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+}
+.card_text6 h2 {
+  color: white;
+  position: absolute;
+  left: 72%;
+  top: 38%;
+  z-index: 100;
+}
+.card_text6 p {
+  color: white;
+  position: absolute;
+  left: 71%;
+  top: 46%;
+  font-size: small;
+  z-index: 100;
+}
+.card_text6 button {
+  color: black;
+  background-color: white;
+  border: none;
+  position: absolute;
+  left: 71%;
+  top: 57%;
+  z-index: 100;
+}
+.cards_container {
+  background: linear-gradient(90deg, black, aliceblue);
+  width: 100%;
+  height: 600px;
+  margin-right: 10%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 500px 30vw 30rem;
+}
+.card_main1:before {
+  content: "";
+}
+.card_main1:hover::before {
+  animation-name: card1_cub1;
+  position: absolute;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+.card_main1:after {
+  content: "";
+}
+.card_main1:hover::after {
+  animation-name: card1_cub2;
+  position: absolute;
+  top: 69%;
+  right: 74%;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+@keyframes card1_cub1 {
+  from {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+}
+@keyframes card1_cub2 {
+  from {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+    transform: translateX(-100px);
+  }
+}
+.card_main2:before {
+  content: "";
+}
+.card_main2:hover::before {
+  animation-name: card2_cub1;
+  position: absolute;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+.card_main2:after {
+  content: "";
+}
+.card_main2:hover::after {
+  animation-name: card2_cub2;
+  position: absolute;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+@keyframes card2_cub1 {
+  from {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    opacity: 0.3;
+  }
+  to {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    opacity: 0.3;
+    transform: translateY(100px);
+  }
+}
+@keyframes card2_cub2 {
+  from {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    opacity: 0.3;
+  }
+  to {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    opacity: 0.3;
+    transform: translateY(-120px);
+  }
+}
+.card_main3:before {
+  content: "";
+}
+.card_main3:hover::before {
+  animation-name: card3_cub1;
+  position: absolute;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+.card_main3:after {
+  content: "";
+}
+.card_main3:hover::after {
+  animation-name: card3_cub2;
+  position: absolute;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+@keyframes card3_cub1 {
+  from {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+    transform: translate(10px, 20px);
+  }
+}
+@keyframes card3_cub2 {
+  from {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.3;
+    transform: translate(20px, -110px);
+  }
+}
+.cards_container2 {
+  display: grid;
+  grid-template-columns: 500px 40vw 20rem;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(45deg, orange, purple);
+  margin-top: 10px;
+}
+.cards_container2 p {
+  font-size: small;
+  padding-top: 55%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.cards_container2 button {
+  font-size: x-small;
+  width: 70px;
+  height: 20px;
+  margin-left: 30%;
+  border-radius: 10px;
+}
+.card7 {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+.card7 h1 {
+  font-size: xx-large;
+  position: absolute;
+  color: white;
+  padding-left: 45%;
+}
+.card7 button {
+  border: none;
+  color: white;
+  cursor: grab;
+  background-color: orange;
+}
+.card7::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: orange;
+}
+.card8 {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-top: 15%;
+  background-color: white;
+}
+.card8 h1 {
+  font-size: xx-large;
+  position: absolute;
+  color: white;
+  padding-left: 45%;
+}
+.card8 button {
+  border: none;
+  color: white;
+  cursor: grab;
+  background-color: red;
+}
+.card8::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: red;
+}
+.card9 {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  width: 220px;
+  height: 300px;
+  margin-top: 25%;
+  border-radius: 10px;
+  background-color: white;
+}
+.card9 h1 {
+  font-size: xx-large;
+  position: absolute;
+  color: white;
+  padding-left: 45%;
+}
+.card9 button {
+  border: none;
+  color: white;
+  cursor: grab;
+  background-color: purple;
+}
+.card9::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: purple;
+}
+.card7:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+  z-index: 10;
+}
+.card8:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+  z-index: 10;
+}
+.card9:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+  z-index: 10;
+}
+.blur {
+  display: none;
+}
+.card7:hover ~ .blur {
+  display: inline-block;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(15px);
+  z-index: 5;
+}
+.card8:hover ~ .blur {
+  display: inline-block;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(15px);
+  z-index: 5;
+}
+.card9:hover ~ .blur {
+  display: inline-block;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(15px);
+  z-index: 5;
+}
+.cards_container3 {
+  display: grid;
+  grid-template-columns: 500px 30vw 30rem;
+  margin-top: 10px;
+  width: 100%;
+  height: 500px;
+  background: black;
+  filter: opacity(0.8);
+}
+.card10 {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin-top: 15%;
+  margin-left: 20%;
+  background: linear-gradient(90deg, darkslateblue 50%, midnightblue 50%);
+  filter: saturate(0.5);
+  border: midnightblue;
+  border-style: groove;
+}
+.card11 {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin-top: 18%;
+  margin-left: 14%;
+  background: linear-gradient(90deg, darkslateblue 50%, midnightblue 50%);
+  filter: saturate(0.5);
+  border: midnightblue;
+  border-style: groove;
+}
+.card12 {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin-top: 15%;
+  margin-left: 14%;
+  background: linear-gradient(90deg, darkslateblue 50%, midnightblue 50%);
+  filter: saturate(0.5);
+  border: midnightblue;
+  border-style: groove;
+}
+.cards_container3 p,
+h3 {
+  color: white;
+  filter: brightness(0.6);
+  z-index: 2;
+}
+.cards_container3 h3 {
+  padding-top: 30%;
+  padding-left: 25%;
+}
+.cards_container3 p {
+  padding-left: 20%;
+  padding-right: 10%;
+}
+.cards_container3 > *::before {
+  content: "";
+  padding-top: 40%;
+  padding-left: 60%;
+  font-size: 450%;
+  position: absolute;
+  color: blue;
+  filter: saturate(50%);
+}
+.cards_container3 button {
+  border: black;
+  margin-left: 25%;
+  cursor: grab;
+}
+.card10:before {
+  content: "01";
+}
+.card11::before {
+  content: "02";
+}
+.card12::before {
+  content: "03";
+}
+.opacity_all {
+  display: none;
+}
+.card10:hover ~ .opacity_all {
+  display: inline-block;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: brightness(10%);
+  z-index: 5;
+}
+.card10:hover::before {
+  transition: all 0.5s;
+  transform: translateY(-40%);
+  filter: brightness(100%);
+  color: skyblue;
+}
+.card11:hover ~ .opacity_all {
+  display: inline-block;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: brightness(10%);
+  z-index: 5;
+}
+.card11:hover::before {
+  transition: all 0.5s;
+  transform: translateY(-40%);
+  filter: brightness(100%);
+  color: skyblue;
+}
+.card12:hover ~ .opacity_all {
+  display: inline-block;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: brightness(10%);
+  z-index: 5;
+}
+.card12:hover::before {
+  transition: all 0.5s;
+  transform: translateY(-40%);
+  filter: brightness(100%);
+  color: skyblue;
+}
+.card10:hover {
+  transition: all 3s;
+  z-index: 10;
+}
+.card11:hover {
+  z-index: 10;
+}
+.card12:hover {
+  z-index: 10;
+}
+.card10:hover > .ramka01::before {
+  visibility: visible;
+}
+.card10:hover > .ramka02::before {
+  visibility: visible;
+}
+.card11:hover > .ramka01::before {
+  visibility: visible;
+}
+.card11:hover > .ramka02::before {
+  visibility: visible;
+}
+.card12:hover > .ramka01::before {
+  visibility: visible;
+}
+.card12:hover > .ramka02::before {
+  visibility: visible;
+}
+.ramka01::before {
+  visibility: hidden;
+  content: "";
+  left: 50%;
+  top: 100%;
+  background-color: skyblue;
+  z-index: 20;
+  position: absolute;
+  animation-name: ramka1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.ramka02::before {
+  visibility: hidden;
+  content: "";
+  top: -1%;
+  background-color: skyblue;
+  z-index: 20;
+  position: absolute;
+  animation-name: ramka3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes ramka1 {
+  from {
+    color: skyblue;
+    width: 100px;
+    height: 3px;
+  }
+  30% {
+    width: 100px;
+    height: 3px;
+    color: skyblue;
+    transform: translateX(-100px);
+  }
+  50% {
+    width: 0;
+    height: 0;
+    transform: translateX(-100px);
+  }
+  70% {
+    width: 3px;
+    height: 30px;
+    color: skyblue;
+    transform: translate(-100px, -300px);
+  }
+  90% {
+    width: 0;
+    height: 0;
+    transform: translate(-100px, -300px);
+  }
+  to {
+    width: 100px;
+    height: 3px;
+    transform: translate(-100px, -303px);
+  }
+}
+@keyframes ramka3 {
+  from {
+    color: skyblue;
+    width: 100px;
+    height: 3px;
+  }
+  30% {
+    width: 100px;
+    height: 3px;
+    color: skyblue;
+    transform: translateX(100px);
+  }
+  50% {
+    width: 0;
+    height: 0;
+    transform: translateX(200px);
+  }
+  70% {
+    width: 3px;
+    height: 30px;
+    color: skyblue;
+    transform: translate(200px, 275px);
+  }
+  90% {
+    width: 0;
+    height: 0;
+    transform: translate(200px, 300px);
+  }
+  to {
+    width: 100px;
+    height: 3px;
+    transform: translate(100px, 303px);
+  }
+}
+.grid_main {
+  display: grid;
+  align-items: center;
+}
+.grid_blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr 0.4fr;
+  padding-top: 10px;
+  gap: 5px 5px;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  background-color: white;
+}
+.grid_blocks img {
+  width: 100px;
+  height: 100px;
+  margin-left: 40%;
+  align-self: center;
+  justify-self: center;
+}
+.grid_blocks p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.grid_blocks > * {
+  background-color: gray;
+  border-color: black;
+}
+.grid_blocks > *:hover {
+  background-color: red;
+  transition: all 3s;
+  border-color: black;
+}
+.one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.two {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  padding-top: 30%;
+}
+.three {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.four {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  padding-left: 10%;
+}
+.five {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding-top: 40%;
+}
+.six {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.seven {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+@media (max-width: 713px) {
+  .grid_blocks img {
+    width: 30%;
+    height: 10%;
+  }
+}
+.forma {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+  background: gray;
+  filter: opacity(0.8);
+}
+.f {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 80px 80px 80px 50px;
+  justify-items: start;
+  align-self: center;
+  border-style: groove;
+  border-color: white;
+  width: 50%;
+  height: 70%;
+  background-color: black;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+.forma h2 {
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-left: 33%;
+}
+.f > input[id="info1"] {
+  width: 90%;
+  height: 30%;
+}
+.f > input[id="info3"] {
+  width: 90%;
+  height: 30%;
+}
+.f > input[id="info4"] {
+  width: 90%;
+  height: 30%;
+}
+.f > input[id="info2"] {
+  width: 90%;
+  height: 30%;
+}
+.f > input[id="nfo"] {
+  width: 95%;
+  height: 30%;
+  margin-left: 3%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.f > input {
+  background-color: black;
+  border-top: black;
+  border-left: black;
+  border-right: black;
+  border-bottom-color: blue;
+  margin-left: 5%;
+}
+.f > input:focus {
+  background-color: aliceblue;
+  color: black;
+  transition: all 1s;
+  outline: none;
+  border: none;
+}
+.f > input:focus::placeholder {
+  transform: translateY(-20px);
+  transition: all 1s;
+}
+.f > button {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  margin-top: -10%;
+  margin-left: 1%;
+}
+.f label {
+  color: white;
+  position: absolute;
+  font-size: medium;
+}
+.f label[for="info1"] {
+  top: 25%;
+  left: 3%;
+}
+.f label[for="info2"] {
+  top: 25%;
+  left: 53%;
+}
+.f label[for="info3"] {
+  top: 48%;
+  left: 3%;
+}
+.f label[for="info4"] {
+  top: 48%;
+  left: 53%;
+}
+.f label[for="nfo"] {
+  top: 70%;
+  left: 3%;
+}
+.f > input[id="info1"]:focus ~ label[for="info1"] {
+  transform: translateY(-30px);
+  transition: all 1s;
+}
+.f > input[id="info2"]:focus ~ label[for="info2"] {
+  transform: translateY(-30px);
+  transition: all 1s;
+}
+.f > input[id="info3"]:focus ~ label[for="info3"] {
+  transform: translateY(-30px);
+  transition: all 1s;
+}
+.f > input[id="info4"]:focus ~ label[for="info4"] {
+  transform: translateY(-30px);
+  transition: all 1s;
+}
+.f > input[id="nfo"]:focus ~ label[for="nfo"] {
+  transform: translateY(-30px);
+  transition: all 1s;
+}
+@media (max-width: 713px) {
+  .f {
+    height: 90%;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+  }
+  .f > * {
+    font-size: small;
+  }
+  .f > button {
+    width: 65%;
+    font-size: xx-small;
+  }
+  .f > input {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    margin: 0;
+  }
+  .f > input[id="nfo"] {
+    width: 90%;
+    margin-left: 1%;
+  }
+  .f label {
+    font-size: x-small;
+  }
+  .f label[for="info1"] {
+    top: 14%;
+    left: 3%;
+  }
+  .f label[for="info2"] {
+    top: 27%;
+    left: 3%;
+  }
+  .f label[for="info3"] {
+    top: 41%;
+    left: 3%;
+  }
+  .f label[for="info4"] {
+    top: 54%;
+    left: 3%;
+  }
+  .f label[for="nfo"] {
+    top: 69%;
+    left: 3%;
+  }
+}
+.button-js {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+.bod {
+  width: 1000px;
+  height: 1000px;
+}
+.capcha {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100px;
+  border-style: groove;
+}
+.capcha > * {
+  margin-left: 5px;
+}
+.capcha input {
+  width: 200px;
+  height: 20px;
+  margin-top: 10px;
+}
+.capcha button {
+  margin-top: 10px;
+  width: 100px;
+  height: 20px;
+}
+.array {
+  position: absolute;
+  left: 25%;
+  top: 5%;
+}
+.txt {
+  position: absolute;
+  left: 35%;
+  top: 2%;
+  border-style: groove;
+}

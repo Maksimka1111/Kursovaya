@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отсавить отзыв</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="stylle.css" />
+    <link rel="stylesheet" href="kursach.css" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+    </style>
+  </head>
+  <body class = "pbody">
+    <header>
+      <a href="index.html"
+        ><img src="pngwing.com.png" alt="logo" width="100"
+      /></a>
+      <div class="burger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle"><span></span></label>
+        <ul class="menubox">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#foot">О нас</a></li>
+        </ul>
+      </div>
+    </header>
+    <div><h1>Здесь вы можете оставить отзыв о сайте</h1>
+        <div class = "forma">
+            <div class = "f">
+               <h2>Contact</h2>
+              <input class = "inp" value = "" type="text" name="1" id="info1" />
+              <label for="info1">Имя</label>
+              <input class = "inp" value = "" type="text" name="2" id="info2" />
+              <label for="info2">Фамилия</label>
+              <input class = "inp" value = "" type="text" name="3" id="info3" />
+              <label for="info3">Почта</label>
+              <input class = "inp" value = "" type="text" name="4" id="info4" />
+              <label for="info4">Телефон</label>
+              <input class = "inp" value = "" type="text" name="5" id="nfo" />
+              <label for="nfo">Напишите ваше сообщение здесь</label>
+              <button class="reg-button" href="/" onclick = "func()">Отправить</button>
+          </div>
+          </div>
+          <script>
+            function func(){
+                let objects = document.getElementsByClassName("inp");
+                var b = true;
+                 for(let i = 0; i<objects.length; i++)
+                 {
+                    if (objects[i].value == "") 
+                    b = false;  
+                 }
+                 if (b == true)
+                 alert("Отзыв отправлен")
+                 else alert("Вы заполнили не все поля");
+            }
+          </script>
+        </div>
+<footer id = "foot">
+    <div class="fut1">
+      <h2>О нас</h2>
+      <p>
+        Сайт, на котором представлены <br>
+        персонажи Диснея и информация о них.
+      </p>
+    <button><img src="free-icon-facebook-739237.png" alt="fcb"></button><button><img src="free-icon-instagram-1384031.png" alt="inst"></button><button><img src="free-icon-telegram-739260.png" alt="teleg"></button><button><img src="free-icon-vk-2111828.png" alt="vk"></button></div>
+      <div class = fut2><h2>Быстрые ссылки</h2>
+        <p>
+         <a href="otziv.html">Оставить отзыв </a><br>
+          <a href = "author.html" target="_blank">Авторские права</a>
+        </p>
+      </div>
+      <div class = "fut4"><h2>Контакты</h2>
+      <img src="free-icon-placeholder-1180805.png" alt="place">
+      <a href = "place.html" target="_blank">
+        Наше местоположение<br>
+      </a>
+      <img src="free-icon-telephone-5037238.png" alt="tel">
+      <p>
+        <address>
+          <a href="tel:+13115552368">+799966633322</a>
+        </address>
+      </p>
+      <img src="free-icon-mail-646094.png" alt="mail">
+      <address>
+        <a href="mailto:jim@rock.com">Написать письмо</a><br>
+      </address>
+      </div>
+      </div>
+  </footer>
+</body>
+</html>
