@@ -253,7 +253,7 @@ textarea:focus {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.25s;
   }
-  .menu-item {
+  .menubox > li {
     display: block;
     padding: 12px 24px;
     color: #333;
